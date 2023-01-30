@@ -1,0 +1,411 @@
+/* ==================== GOOGLE FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap');
+
+/* ==================== VARIABLES CSS ==================== */
+:root {
+	/* ========== COLORS ========== */
+	/* COLORS */
+	--header-color: #0C8874;
+	--white-color: #FFF;
+	--text-color: #333;
+
+	/* ========== FONT AND TYPOGRPHY ========== */
+	/* 0.5rem = 8px | 1rem = 16px ... */
+	--body-font: 'Noto Sans JP', sans-serif;
+	--h1-font-size: 3rem; /* 48px */
+	--h2-font-size: 2.5rem; /* 40px */
+	--h3-font-size: 1.75rem; /* 28px */
+	--h4-font-size: 1.5rem; /* 24px */
+	--h5-font-size: 1rem;
+	--discription-font-size: 1.5rem;
+	--p-font-size: 1.25rem; /* 20px */
+
+	--font-weight100: 100;
+	--font-weight300: 300;
+	--font-weight500: 500;
+}
+
+/* ==================== BASE ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	font-family: var(--body-font);
+	color: var(--text-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	text-align: center;
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+}
+
+h4 {
+	font-size: var(--h4-font-size);
+}
+
+h5 {
+	font-size: var(--h5-font-size);
+}
+
+p {
+	font-size: var(--p-font-size);
+}
+
+/* img {
+	max-width: 100%;
+	height: auto;
+} */
+
+/* ==================== HEADER ==================== */
+.header {
+	background-color: var(--header-color);
+	width: 100%;
+	height: 700px;
+	font-size: var(--h2-font-size);
+	padding: 56px 0;
+}
+
+.header_line {
+	width: 880px;
+	height: 548px;
+	margin: 40px auto 0;
+	display: flex;
+}
+
+.right_side {
+	margin: auto 0 auto auto;
+}
+
+.header h1,
+.header h4 {
+	color: var(--white-color);
+}
+
+.header h1 {
+	margin-bottom: 90px;
+}
+
+.header h4 {
+	margin-bottom: 20px;
+}
+
+.header_img {
+	width: 256px;
+	height: 548px;
+}
+
+.download_block {
+	height: 223px;
+	background-color: var(--white-color);
+	border-radius: 30px;
+	text-align: center;
+}
+
+.download_block h4 {
+	color: var(--text-color);
+	padding-top: 40px;
+}
+
+.blocks,
+.block {
+	display: flex;
+	margin: 0 auto;
+}
+
+.qr {
+	width: 85px;
+	height: 85px;
+	margin-left: 12px;
+}
+
+/* ==================== MAIN ==================== */
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* ========== DESCRPTION ========== */
+.desciption {
+	width: 880px;
+	margin: 120px auto 0;
+}
+
+.desciption p {
+	font-size: var(--discription-font-size);
+	text-align: justify;
+}
+
+/* ========== FEATURE ========== */
+.features {
+	width: 880px;
+	margin: 0 auto;
+}
+
+.features h2 {
+	width: 620px;
+	height: 68px;
+	border: 2px solid var(--header-color);
+	border-radius: 45px;
+	margin: 100px auto 60px;
+	color: var(--header-color);
+}
+
+.feature {
+	width: 880px;
+	height: 548px;
+	margin: 60px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feature img {
+	width: 256px;
+	height: 548px;
+	margin-left: 50px;
+}
+
+.feature_first {
+	margin-right: 106px;
+}
+
+.feature_first li {
+	margin-left: 86px;
+}
+
+.feature_second {
+	margin-right: 40px;
+}
+
+.feature h3 {
+	display: block;
+	margin-bottom: 30px;
+	font-weight: var(--font-weight300);
+}
+
+.feature li,
+.feature p {
+	padding-bottom: 2px;
+	font-size: var(--p-font-size);
+	font-weight: var(--font-weight300);
+}
+/* ========== HOW TO USE ========== */
+.howto {
+	width: 1000px;
+	margin: 0 auto;
+	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.howto section {
+	width: 320px;
+	height: 608px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.howtos h2 {
+	width: 680px;
+	height: 68px;
+	border: 2px solid var(--header-color);
+	border-radius: 45px;
+	margin: 120px auto 60px;
+	color: var(--header-color);
+	grid-area: 1 / 1 / 2 / 4;
+}
+
+.howtos h5 {
+	width: 320px;
+	height: 30px;
+	border: 2px solid var(--header-color);
+	border-radius: 45px;
+	color: var(--header-color);
+	margin-bottom: 23px;
+}
+
+.howtos img {
+	width: 270px;
+	height: 555px;
+	border: 1px solid #000;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+	background-color: var(--header-color);
+}
+
+.footer {
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.footer_title h3 {
+	padding: 10px 0 30px;
+}
+
+.footer_title h4 {
+	padding-top: 70px;
+}
+
+.footer_title h3,
+.footer_title h4 {
+	color: var(--white-color);
+}
+
+.footer .download_block {
+	width: 600px;
+	height: 200px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+@media screen and (max-width: 1024px) {
+	h1 {
+		font-size: calc(var(--h1-font-size) * 760 / 880);
+	}
+
+	h2 {
+		font-size: calc(var(--h2-font-size) * 760 / 880);
+	}
+
+	h3 {
+		font-size: calc(var(--h3-font-size) * 760 / 880);
+	}
+
+	h4 {
+		font-size: calc(var(--h4-font-size) * 760 / 880);
+	}
+
+	h5 {
+		font-size: calc(var(--h5-font-size) * 760 / 880);
+	}
+
+	.header {
+		height: calc(56px * 2 + 473px);
+	}
+
+	.header_line {
+		width: 760px;
+		height: 473px;
+		margin: 0 auto;
+	}
+
+	.header_img {
+		width: calc(256px * 760 / 880);
+		height: calc(548px * 760 / 880);
+	}
+
+	.right_side {
+		margin: auto 0 auto auto;
+	}
+
+	.right_side h1 {
+		margin-bottom: 20px;
+	}
+
+	.right_side h4 {
+		font-size: calc(var(--h4-font-size) * 760 / 880);
+		margin-bottom: 20px;
+	}
+
+	.download_block {
+		width: calc(574px * 760 / 880);
+		height: 280px;
+		background-color: var(--white-color);
+		border-radius: 30px;
+		text-align: center;
+	}
+
+	.download_block h4 {
+		padding-top: 20px;
+	}
+
+	.block {
+		display: block;
+	}
+
+	.main {
+		width: 884px;
+		margin: 0 auto;
+	}
+
+	.desciption {
+		width: 760px;
+		margin: 120px auto 0;
+	}
+
+	.desciption p {
+		font-size: calc(var(--discription-font-size) * 760 / 880);
+		text-align: justify;
+	}
+
+	.howtos {
+		display: grid;
+		grid-template-columns: 1fr, 1fr;
+	}
+
+	.howtos section {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 78px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		width: 100%;
+	}
+
+	.header_line {
+		width: 100%;
+		height: 473px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.header_img {
+		width: calc(256px * 760 / 880);
+		height: calc(548px * 760 / 880);
+	}
+
+	.howto {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.howto section {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+}
+

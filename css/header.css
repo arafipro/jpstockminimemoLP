@@ -1,0 +1,160 @@
+/* ==================== HEADER ==================== */
+.header {
+	background-color: var(--header-color);
+	width: 100%;
+	height: 700px;
+	font-size: var(--h2-font-size);
+	padding: 56px 0;
+}
+
+.header_line {
+	width: 880px;
+	height: 548px;
+	margin: 40px auto 0;
+	display: flex;
+}
+
+.right_side {
+	margin: auto 0 auto auto;
+}
+
+.right_side h1,
+.right_side h4 {
+	color: var(--white-color);
+}
+
+.right_side h1 {
+	margin-bottom: 90px;
+}
+
+.right_side h4 {
+	margin-bottom: 20px;
+}
+
+.header_img {
+	width: 256px;
+	height: 548px;
+}
+
+.download_block {
+	width: 574px;
+	height: 223px;
+	background-color: var(--white-color);
+	border-radius: 30px;
+	text-align: center;
+}
+
+.download_block h4 {
+	color: var(--text-color);
+	padding-top: 40px;
+}
+
+.blocks,
+.block {
+	display: flex;
+	margin: 0 auto;
+}
+
+.qr {
+	width: 85px;
+	height: 85px;
+	margin-left: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+		height: calc(56px * 2 + 473px);
+	}
+
+	.header_line {
+		width: 720px;
+		height: 473px;
+		margin: 0 auto;
+	}
+
+	.header_img {
+		width: calc(256px * 760 / 880);
+		height: calc(548px * 760 / 880);
+	}
+
+	.right_side {
+		margin: auto 0 auto auto;
+	}
+
+	.right_side h1 {
+		margin-bottom: 20px;
+	}
+
+	.right_side h4 {
+		margin-bottom: 20px;
+	}
+
+	.download_block {
+		width: 455px;
+		height: 280px;
+		border-radius: 30px;
+		text-align: center;
+	}
+
+	.download_block h4 {
+		padding-top: 20px;
+	}
+
+	.block {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header {
+		height: 500px;
+		padding: 30px 0;
+	}
+
+	.header_line {
+		width: calc(574px * 500 / 880 * .9);
+		height: 473px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.header_img {
+		width: calc(256px * 500 / 880 * .7);
+		height: calc(548px * 500 / 880 * .7);
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.right_side h1 {
+		font-size: calc(var(--h1-font-size) * 500 / 880 * .9);
+		margin-bottom: 20px;
+	}
+
+	.right_side h4 {
+		margin: 20px 0 10px;
+	}
+
+	.header .download_block {
+		margin-top: 40px;
+		width: calc(574px * 500 / 880 * .9);
+		height: calc(280px * 500 / 880 * .5);
+		border-radius: 30px;
+		text-align: center;
+	}
+
+	.download_block h4,
+	.download_block h5,
+	.download_block .qr {
+		display: none;
+	}
+
+	.block {
+		margin: 16px auto;
+	}
+
+	.download_icon {
+		width: calc(160px / 3 * 2);
+		height: 100%;
+	}
+}
+

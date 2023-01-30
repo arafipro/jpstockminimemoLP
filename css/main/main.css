@@ -1,0 +1,19 @@
+/* ==================== MAIN ==================== */
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+	.main {
+		width: 720px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main {
+		width: calc(574px * 500 / 880 * .9);
+		margin: 0 auto;
+	}
+}

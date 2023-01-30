@@ -1,0 +1,92 @@
+/* ========== HOW TO USE ========== */
+.howto {
+	width: 1000px;
+	margin: 0 auto;
+	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.howto section {
+	width: 320px;
+	height: 608px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.howtos h2 {
+	width: 680px;
+	height: 68px;
+	border: 2px solid var(--header-color);
+	border-radius: 45px;
+	margin: 120px auto 60px;
+	color: var(--header-color);
+}
+
+.howtos h5 {
+	width: 320px;
+	height: 30px;
+	border: 2px solid var(--header-color);
+	border-radius: 45px;
+	color: var(--header-color);
+	margin-bottom: 23px;
+}
+
+.howtos img {
+	width: 270px;
+	height: 555px;
+	border: 1px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+	.howtos h2 {
+		width: calc(620px * 760 / 880 * 1.05);
+		height: calc(68px * 760 / 880);
+	}
+
+	.howto {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+	}
+
+	.howto section {
+		margin: 0 auto;
+		margin-bottom: 78px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.howtos h2 {
+		width: 280px;
+		height: calc(68px * 500 / 880 * .8);
+		margin: 40px auto 20px;
+	}
+
+	.howto {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.howto section {
+		width: 220px;
+		height: 480px;
+		margin: 0 auto;
+	}
+
+	.howto h5 {
+		width: 220px;
+		height: 20px;
+		border: 2px solid var(--header-color);
+		border-radius: 45px;
+		color: var(--header-color);
+		margin-bottom: 23px;
+	}
+
+	.howto img {
+		width: 200px;
+		height: calc(200px * 2220 / 1080)
+	}
+}

@@ -1,0 +1,17 @@
+/* ==================== GOOGLE FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap');
+
+/* ==================== VARIABLES CSS ==================== */
+@import url('/css/default.css');
+
+/* ==================== HEADER ==================== */
+@import url('/css/header.css');
+
+/* ==================== MAIN ==================== */
+@import url('/css/main/main.css');
+@import url('/css/main/desciption.css');
+@import url('/css/main/feature.css');
+@import url('/css/main/howto.css');
+
+/* ==================== FOOTER ==================== */
+@import url('/css/footer.css');
