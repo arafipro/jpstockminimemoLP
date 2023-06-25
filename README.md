@@ -15,3 +15,4 @@ Noto Sans JP Regular 400 menu
 ## 画像
 imagename, width, height
 top_listpage.png, 256px, 548px
+
